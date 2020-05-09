@@ -1,4 +1,21 @@
 $(document).ready(function() {
+    // scroll function
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 50) {
+            $('#back-to-top').fadeIn();
+        } else {
+            $('#back-to-top').fadeOut();
+        }
+    });
+    // scroll body to 0px on click
+    $('#back-to-top').click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 800);
+        return false;
+    });
+
+    // content GET
     var APIkey = 'AIzaSyDKtnNSWonEdeut6hXJCLB06AM93Qr7Evg';
     var query = 'kpop';
     var URL = 'https://www.googleapis.com/youtube/v3/search';
@@ -12,9 +29,7 @@ $(document).ready(function() {
         safeSearch: 'none',
         type: 'video'
     }
-    
-    loadContents(); 
-
+    loadContents();
     function loadContents() {
         $.getJSON(URL, options, function(data) {
             var data = data;
@@ -60,5 +75,4 @@ $(document).ready(function() {
             featureVideo(id);
         })
     }
-    
 });
