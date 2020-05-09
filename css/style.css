@@ -1,86 +1,90 @@
-h1, h4, p {
-    font-family: 'Roboto';
-    color: blanchedalmond;
+h1,
+h4,
+p {
+  font-family: "Roboto";
+  color: blanchedalmond;
 }
 
 h1 {
-    font-size: 20px;
-    text-align: left;
-    padding-left: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: left;
+  padding-left: 20px;
 }
 
 h4 {
-    padding-left: 20px;
-    font-weight: 600;
-    font-size: 20px;
-    margin-top: 0;
-    margin-bottom: 10px;
+  padding-left: 20px;
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 p {
-    padding-left: 20px;
-    font-weight: 500; 
-    font-size: 0.9rem;
-    margin: auto;
+  padding-left: 20px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin: auto;
 }
 
 body {
-    background: rgb(30,31,38);
-    height: 100%;
+  background: rgb(30, 31, 38);
+  height: 100%;
 }
 
 .container {
-    width: 560px;
-    height: 1000px;
-    background-color:black;
-    margin: 0 auto;
+  width: 560px;
+  height: 1000px;
+  background-color: black;
+  margin: 0 auto;
 }
 
 #feature-video {
-    padding-top: 45px;
-    background-color: black;
+  padding-top: 70px;
+  background-color: black;
 }
 
 header {
-    top:0;
-    position: fixed;
-    background-color: black;
-    height: 70px;
+  top: 0;
+  position: fixed;
+  background-color: black;
+  height: 70px;
 }
 
-header, section {
-    text-align: center;
-    width: 560px;
+header,
+section {
+  text-align: center;
+  width: 560px;
 }
 
 section {
-    top: 50px;
+  top: 50px;
 }
 
 main {
-    padding: 0px 18px 10px;
-    background-color: black;
+  padding: 0px 18px 10px;
+  background-color: black;
 }
 
 article {
-    display: flex;
-    align-items: center;
-    border: 2px solid black;
-    border-radius: 8px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 8px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 article:hover {
-    border: 2px solid pink;
+  border: 2px solid pink;
 }
 
 .thumb {
-    width: 262.5; 
-    height: 150;
-    border-radius: 8px;
+  width: 262.5;
+  height: 150;
+  border-radius: 8px;
 }
 
 .logo {
-    width: 120px;
-    padding-top: 20px;
+  width: 120px;
+  padding-top: 20px;
 }
